@@ -1,7 +1,7 @@
-
-
+import { FaHome } from "react-icons/fa";
+// import { MdAddToHomeScreen } from "react-icons/md";
 export default function Home() {
   return (
-   <h1>fffggg</h1>
+<FaHome className="text-green-300 h-6 w-6"/>
   );
 }
