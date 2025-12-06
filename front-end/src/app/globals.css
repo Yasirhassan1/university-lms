@@ -4,7 +4,10 @@
   box-sizing: border-box;
 }
 
-
+:root {
+  /* Define colors */
+  --primary-color: #05601F;
+}
 
 
 

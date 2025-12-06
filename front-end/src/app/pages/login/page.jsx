@@ -1,7 +1,10 @@
 import Link from "next/link"
 import Image from "next/image"
 import logoSource from '@/app/assets/logo.svg'
+import { FaRegUser } from "react-icons/fa6";
+import { GoLock } from "react-icons/go";
 export default function Page(){
+ 
     return(
         <div className="bg-[#F3F7FD] h-screen flex flex-col items-center">
             <header className="flex w-full gap-4 justify-between flex-wrap px-4 text-gray-600 items-center  bg-white h-14 border-b border-gray-300/70">
@@ -30,19 +33,25 @@ export default function Page(){
             </div>
             <div className="flex flex-col gap-1 mt-5">
             <label htmlFor="" className="font-semibold">Username <span className="text-red-500">*</span></label>
-            <input type="text" placeholder="F23BSCS044"  className="bg-[#FFFDFD] border rounded-md py-3 px-3 outline-0 focus:ring-1 focus:ring-green-200 border-[#C3C3C3]"/>
+            <div className="relative">
+            <input type="text" placeholder="F23BSCS044"  className="bg-[#FFFDFD] w-full border rounded-md py-3 px-3 outline-0 focus:ring-1 focus:ring-green-200 border-[#C3C3C3]"/>
+            <FaRegUser className="absolute text-gray-500 right-3 top-1/2 -translate-y-1/2"/>
+            </div>
             </div>
 
             <div className="flex flex-col gap-1">
             <label htmlFor="" className="font-semibold">Password <span className="text-red-500">*</span></label>
-            <input type="text"  className="bg-[#FFFDFD] border rounded-md py-3 px-3 outline-0 focus:ring-1 focus:ring-green-200 border-[#C3C3C3]"/>
+            <div className="relative">
+            <input type="text"  className="bg-[#FFFDFD] w-full border rounded-md py-3 px-3 outline-0 focus:ring-1 focus:ring-green-200 border-[#C3C3C3]"/>
+            <GoLock className="absolute text-gray-500 right-3 top-1/2 -translate-y-1/2"/>
+            </div>
             </div>
             <div className="flex gap-2">
               <input type="checkbox" />
                 <span>Remember me</span>
             </div>
-            <button className="bg-[#007A56]  text-white py-2 rounded-md hover:bg-[#015239] duration-200 transition-all cursor-pointer font-semibold">Sign In</button>
-            <Link className="mt-6 hover:underline w-fit" href={"/"}>Forget Password?</Link>
+            <Link href={"/pages/dashboard"} className="bg-(--primary-color) mt-3  text-white py-2 rounded-md text-center hover:bg-[#015228] duration-200 transition-all cursor-pointer font-semibold">Sign In</Link>
+            <Link className="mt-6 hover:underline w-fit text-gray-500" href={"/"}>Forget Password?</Link>
         </form>
 
         </div>
