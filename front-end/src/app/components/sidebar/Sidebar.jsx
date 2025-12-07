@@ -2,6 +2,7 @@ import Image from "next/image"
 import img from "@/app/assets/logo.svg"
 import Link from "next/link"
 import { IoClose } from "react-icons/io5";
+import { linksData } from "./linksData";
 
 export default function Sidebar({ isOpen, onClose }) {
   return (
@@ -45,17 +46,11 @@ export default function Sidebar({ isOpen, onClose }) {
         </div>
 
         <div className="links flex flex-col gap-3.5 mt-10 text-gray-500 border-b border-b-gray-300 pb-6">
-          <Link href={"/"} onClick={onClose}>HOME</Link>
-          <Link href={"/"} onClick={onClose}>QEC</Link>
-          <Link href={"/"} onClick={onClose}>CODE CONTRIBUTORS</Link>
-          <Link href={"/"} onClick={onClose}>COURSES</Link>
-          <Link href={"/"} onClick={onClose}>GRADE BOOK</Link>
-          <Link href={"/"} onClick={onClose}>ACCOUNT BOOK</Link>
-          <Link href={"/"} onClick={onClose}>TRANSPORT</Link>
-          <Link href={"/"} onClick={onClose}>LIBRARY</Link>
-          <Link href={"/"} onClick={onClose}>COMMON</Link>
-          <Link href={"/"} onClick={onClose}>DOWNLOADS</Link>
-          <Link href={"/"} onClick={onClose}>DIGITAL LIBRARY</Link>
+
+          {linksData.map((cur, ind)=>{
+            return  <Link key={ind} href={cur.href} onClick={onClose}>{cur.name}</Link>
+          })}
+         
 
         </div>
 
