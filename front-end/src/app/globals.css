@@ -9,7 +9,9 @@
   --primary-color: #05601F;
 }
 
-
+button{
+  cursor: pointer;
+}
 
 /* --- Responsive Typography Scale --- */
 

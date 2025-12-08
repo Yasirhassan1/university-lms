@@ -1,8 +1,8 @@
-import { Inter} from "next/font/google";
+import {Poppins} from "next/font/google";
 
 import "./globals.css";
 
-const inter = Inter({
+const poppins = Poppins({
   subsets: ["latin"],       // Required: which character sets to load
   weight: ["400", "500", "700"], // Optional: specify which font weights you need
   variable: "--font-inter", // Optional: use as CSS variable
@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${inter.className} antialiased`}
+        className={`${poppins.className} antialiased`}
       >
         {children}
       </body>

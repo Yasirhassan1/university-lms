@@ -1,7 +1,7 @@
 
 export default function Table({tableHead, tableRowData}) {
     return (
-        <table className="w-full border-collapse shadow-sm  border border-gray-400 max-w-7xl rounded-lg">
+        <table className="w-full border-collapse shadow-sm  border border-gray-400 max-w-7xl rounded-lg overflow-hidden">
             <thead className="bg-green-100">
                 <tr>
                     {

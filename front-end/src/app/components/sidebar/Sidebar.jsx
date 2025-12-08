@@ -48,7 +48,7 @@ export default function Sidebar({ isOpen, onClose }) {
         <div className="links flex flex-col gap-3.5 mt-10 text-gray-500 border-b border-b-gray-300 pb-6">
 
           {linksData.map((cur, ind)=>{
-            return  <Link key={ind} href={cur.href} onClick={onClose}>{cur.name}</Link>
+            return  <Link className="hover:underline" key={ind} href={cur.href} onClick={onClose}>{cur.name}</Link>
           })}
          
 
