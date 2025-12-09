@@ -1,5 +1,5 @@
 import Table from "@/app/components/table/Table";
-import {table} from "@/app/pages/dashboard/lectures/table-data"
+import {table} from "@/app/(pages)/dashboard/lectures/table-data"
 export default function Page(){
     return(
         <section>

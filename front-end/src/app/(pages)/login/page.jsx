@@ -50,7 +50,7 @@ export default function Page(){
               <input type="checkbox" />
                 <span>Remember me</span>
             </div>
-            <Link href={"/pages/dashboard"} className="bg-(--primary-color) mt-3  text-white py-2 rounded-md text-center hover:bg-[#015228] duration-200 transition-all cursor-pointer font-semibold">Sign In</Link>
+            <Link href={"/dashboard"} className="bg-(--primary-color) mt-3  text-white py-2 rounded-md text-center hover:bg-[#015228] duration-200 transition-all cursor-pointer font-semibold">Sign In</Link>
             <Link className="mt-6 hover:underline w-fit text-gray-500" href={"/"}>Forget Password?</Link>
         </form>
 

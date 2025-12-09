@@ -1,5 +1,5 @@
 import Table from "@/app/components/table/Table";
-import {table} from "@/app/pages/dashboard/attendence/table-data"
+import {table} from "@/app/(pages)/dashboard/attendence/table-data"
 export default function Page(){
     return(
       <div className="flex flex-col gap-4">

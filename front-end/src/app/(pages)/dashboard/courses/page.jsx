@@ -1,5 +1,5 @@
-import {table} from "@/app/pages/dashboard/courses/table-data"
-import {table as table2} from "@/app/pages/dashboard/courses/fail-subject-data"
+import {table} from "@/app/(pages)/dashboard/courses/table-data"
+import {table as table2} from "@/app/(pages)/dashboard/courses/fail-subject-data"
 import Table from "@/app/components/table/Table"
 export default function Page(){
     return(

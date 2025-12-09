@@ -1,9 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
-import Table from '../../../components/table/Table';
+import Table from '@/app/components/table/Table';
 import { tableHead, tableRowData } from './data';
-import logo from '../../../assets/logo.svg';
-import profilePic from '../../../assets/profile-pic.svg';
+import logo from '@/app/assets/logo.svg';
+import profilePic from '@/app/assets/profile-pic.svg';
 
 const AdmitCard = () => {
     return (

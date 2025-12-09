@@ -1,4 +1,4 @@
-import {table} from "@/app/pages/dashboard/assignment/table-data"
+import {table} from "@/app/(pages)/dashboard/assignment/table-data"
 import Table from "@/app/components/table/Table"
 export default function Page(){
     return(
