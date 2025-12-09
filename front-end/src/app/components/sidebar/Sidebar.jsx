@@ -3,8 +3,18 @@ import img from "@/app/assets/logo.svg"
 import Link from "next/link"
 import { IoClose } from "react-icons/io5";
 import { linksData } from "./linksData";
+import { MdKeyboardArrowRight } from "react-icons/md";
+import { useState } from "react";
 
 export default function Sidebar({ isOpen, onClose }) {
+  const [expandedMenus, setExpandedMenus] = useState([])
+
+  const toggleMenu = (name) => {
+    setExpandedMenus(prev =>
+      prev.includes(name) ? prev.filter(item => item !== name) : [...prev, name]
+    )
+  }
+
   return (
     <>
       {/* Mobile Overlay */}
@@ -45,12 +55,45 @@ export default function Sidebar({ isOpen, onClose }) {
           </button>
         </div>
 
-        <div className="links flex flex-col gap-3.5 mt-10 text-gray-500 border-b border-b-gray-300 pb-6">
+        <div className="links flex flex-col gap-3.5 mt-10 text-gray-500 border-b border-b-gray-300 pb-6 overflow-y-auto">
 
-          {linksData.map((cur, ind)=>{
-            return  <Link className="hover:underline" key={ind} href={cur.href} onClick={onClose}>{cur.name}</Link>
+          {linksData.map((cur, ind) => {
+            if (cur.expandable) {
+              const isExpanded = expandedMenus.includes(cur.name);
+              return (
+                <div key={ind} className="flex flex-col">
+                  <button
+                    className="flex justify-between items-center w-full group hover:text-green-700 transition-colors"
+                    onClick={() => toggleMenu(cur.name)}
+                  >
+                    <span>{cur.name}</span>
+                    <MdKeyboardArrowRight
+                      className={`transition-transform duration-200 ${isExpanded ? "rotate-90" : "rotate-0"}`}
+                      size={24}
+                    />
+                  </button>
+
+                  {/* Sub-links */}
+                  {isExpanded && (
+                    <div className="flex flex-col ml-2 mt-2 border-l-2 border-l-gray-200 pl-4 gap-2 animate-in slide-in-from-top-2 fade-in duration-200">
+                      {cur.subLinks?.map((sub, subInd) => (
+                        <Link
+                          key={subInd}
+                          href={sub.href}
+                          onClick={onClose}
+                          className="text-sm text-gray-400 hover:text-green-600 hover:underline py-1"
+                        >
+                          {sub.name}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              )
+            }
+            return <Link className="hover:underline hover:text-green-700 transition-colors" key={ind} href={cur.href} onClick={onClose}>{cur.name}</Link>
           })}
-         
+
 
         </div>
 
