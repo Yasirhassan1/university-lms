@@ -28,7 +28,7 @@ export default function Header({ toggleSidebar }) {
                 <div className="rounded-lg border  border-gray-500 p-3">
                     <GoBell className="h-5 w-5 text-gray-500" />
                 </div>
-                <Link href="/pages/login" className=" rounded-lg border  border-gray-500 p-3">
+                <Link href="/login" className=" rounded-lg border  border-gray-500 p-3">
                     <CiLogout className="h-5 w-5 rotate-180 text-gray-500" />
                 </Link>
             </div>

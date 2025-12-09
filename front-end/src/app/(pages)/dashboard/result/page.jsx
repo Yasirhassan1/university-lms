@@ -45,7 +45,7 @@ export default function Page() {
         result.results.map((cur, ind)=>{
             return (
 
-                <div className="flex flex-col gap-2">
+                <div key={ind} className="flex flex-col gap-2">
                     <p>Semester {ind+1}</p>
                       <Table key={ind} tableHead={result.head} tableRowData={cur.tableRowData}/>
                 </div>

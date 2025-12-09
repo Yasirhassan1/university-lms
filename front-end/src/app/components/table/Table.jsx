@@ -1,7 +1,8 @@
 
 export default function Table({tableHead, tableRowData}) {
     return (
-        <table className="w-full border-collapse shadow-sm  border border-gray-400 max-w-7xl rounded-lg overflow-hidden">
+        <div className="border border-gray-400 rounded-lg"> 
+        <table className="w-full bg-white border-collapse shadow-sm  border border-gray-400 max-w-7xl rounded-lg overflow-hidden">
             <thead className="bg-green-100">
                 <tr>
                     {
@@ -17,7 +18,7 @@ export default function Table({tableHead, tableRowData}) {
                 {
                     tableRowData.map((item, index) => {
                         return (
-                            <tr key={index}>
+                            <tr className="hover:bg-gray-200" key={index}>
                                 {
                                     item.map((cell, index) => {
                                         return (
@@ -31,5 +32,6 @@ export default function Table({tableHead, tableRowData}) {
                 }
             </tbody>
         </table>
+        </div>
     )
 }
