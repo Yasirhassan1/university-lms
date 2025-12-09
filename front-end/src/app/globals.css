@@ -11,6 +11,12 @@
 
 button{
   cursor: pointer;
+  /* hover:bg-green-900 transition-colors */
+}
+
+button:hover{
+  background-color: #004514;
+  transition:all;
 }
 
 /* --- Responsive Typography Scale --- */

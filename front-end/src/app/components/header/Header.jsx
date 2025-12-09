@@ -1,7 +1,7 @@
 import { IoSearchOutline, IoMenu } from "react-icons/io5";
 import { GoBell } from "react-icons/go";
 import { CiLogout } from "react-icons/ci";
-
+import Link from "next/link";
 export default function Header({ toggleSidebar }) {
     return (
         <header className="py-5 col-start-1 lg:col-start-2 row-start-1 h-[80px] bg-white border-b border-gray-200 flex items-center px-4 gap-3 justify-between lg:justify-start">
@@ -28,9 +28,9 @@ export default function Header({ toggleSidebar }) {
                 <div className="rounded-lg border  border-gray-500 p-3">
                     <GoBell className="h-5 w-5 text-gray-500" />
                 </div>
-                <div className=" rounded-lg border  border-gray-500 p-3">
+                <Link href="/pages/login" className=" rounded-lg border  border-gray-500 p-3">
                     <CiLogout className="h-5 w-5 rotate-180 text-gray-500" />
-                </div>
+                </Link>
             </div>
 
 
