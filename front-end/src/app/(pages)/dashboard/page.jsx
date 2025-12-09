@@ -9,7 +9,7 @@ export default function Page(){
         <div className="flex flex-col gap-5">
 
         <section  className="bg-green-100 p-6 rounded-lg flex flex-col gap-3 items-center">
-            <h3 className="text-center">Welcomboard</h3>
+            <h3 className="text-center">Welcome to Your LMS Dashboard</h3>
             <span>Manage your Journey with ease</span>
             <Link className="bg-(--primary-color) text-white px-4 py-2 rounded-md" href="/dashboard/admit-card">View Admit Card</Link>
         </section>

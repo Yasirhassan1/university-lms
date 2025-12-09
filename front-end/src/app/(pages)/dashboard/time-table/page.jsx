@@ -1,4 +1,4 @@
-import { timetable } from "@/app/pages/dashboard/time-table/time-table-data"
+import { timetable } from "@/app/(pages)/dashboard/time-table/time-table-data"
 import Table from "@/app/components/table/Table"
 export default function Page() {
     return (
