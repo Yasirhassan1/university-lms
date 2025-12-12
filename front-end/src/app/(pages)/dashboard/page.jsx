@@ -2,7 +2,30 @@ import ActionCardGrid from "@/app/components/action-card/ActionCardGrid";
 import Link from "next/link";
 import QuickInfo from "@/app/components/quick-info/QuickInfo";
 import NoticeBoard from "@/app/components/notice-board/NoticeBoard";
-export default function Page(){
+export default function Dashboard(){
+
+    const data = [
+        {
+            title: "AI Ethics Webinar",
+            date: "2025-12-07",
+            location: "Conference Hall",
+        },
+        {
+            title: "AI Ethics Webinar",
+            date: "2025-12-07",
+            location: "Conference Hall",
+        },
+        {
+            title: "AI Ethics Webinar",
+            date: "2025-12-07",
+            location: "Conference Hall",
+        },
+        {
+            title: "AI Ethics Webinar",
+            date: "2025-12-07",
+            location: "Conference Hall",
+        },
+    ]
 
     return(
 
@@ -23,7 +46,7 @@ export default function Page(){
         </section>
 
         <section className="mt-5">
-            <NoticeBoard/> 
+        <NoticeBoard data={data}/>
         </section>
 
         </div>

@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function ActionCard({ title, icon: Icon, goto, className = "" }) {
     return (
         <Link href={goto}
-        
+
             className={`
                 card bg-white rounded-lg shadow-sm hover:shadow-md 
                 flex flex-col items-center cursor-pointer 
@@ -21,3 +21,12 @@ export default function ActionCard({ title, icon: Icon, goto, className = "" }) 
         </Link>
     )
 }
+
+import PropTypes from 'prop-types';
+
+ActionCard.propTypes = {
+    title: PropTypes.string.isRequired,
+    icon: PropTypes.elementType.isRequired,
+    goto: PropTypes.string.isRequired,
+    className: PropTypes.string,
+};

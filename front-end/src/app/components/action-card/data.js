@@ -9,41 +9,49 @@ import { TiCreditCard } from "react-icons/ti";
 
 export const actionCardData = [
     {
+        id:1,
         title: "LECTURES",
         icon: FaRegFile,    
         goto: "/dashboard/courses/syllabus"
     },
     {
+        id:2,
         title: "COURSES",
         icon: PiCylinderLight,
         goto: "/dashboard/courses/course-registration"
     },
     {
+        id:3,
         title: "ATTENDENCE",
         icon: FaRegCircleCheck,
         goto: "/dashboard/courses/attendence"
     },
     {
+        id:4,
         title: "ASSIGNMENT",
         icon: LuFileText,
         goto: "/dashboard/courses/submit-assignment"
     },
     {
+        id:5,
         title: "RESULT",
         icon: IoMdStarOutline,
         goto: "/dashboard/grade-book/my-result"
     },
     {
+        id:6,
         title: "E-BOOK",
         icon: IoBookOutline,
         goto: "/dashboard/library/e-book"
     },
     {
+        id:7,
         title: "TIME TABLE",
         icon: CiViewTimeline,
         goto: "/dashboard/courses/time-table"
     },
     {
+        id:8,
         title: "ACCOUNT",
         icon: TiCreditCard,
         goto: "/dashboard/account-book/my-fee"

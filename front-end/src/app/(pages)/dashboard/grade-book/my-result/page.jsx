@@ -5,20 +5,44 @@ export default function Page() {
   const data = [
     {
        studentDetails: [
-    { title: "Name", value: "Yasir Hassan" },
-    { title: "Father Name", value: "Ghulam Hassan" },
-    { title: "Registration No", value: "F23BSCS044" },
-    { title: "Department", value: "Computer Science" },
-    { title: "Degree", value: "BSCS" },
-    { title: "Session", value: "2023-2027" },
+    {
+      id:1,
+      title: "Name", 
+      value: "Yasir Hassan" 
+      },
+    {
+      id:2,
+       title: "Father Name", 
+       value: "Ghulam Hassan" 
+      },
+    {
+      id:3,
+       title: "Registration No", 
+       value: "F23BSCS044" 
+      },
+    {
+      id:4,
+       title: "Department", 
+       value: "Computer Science" 
+      },
+    {
+      id:5,
+       title: "Degree", 
+       value: "BSCS" 
+      },
+    {
+      id:6,
+       title: "Session", 
+       value: "2023-2027" 
+      },
         ]
     },
     {
         resultDetails: [
-        {title: "Total Credit Hour", value: 18},
-        {title: "Total Marks", value: 600},
-        {title: "Obtain Marks", value: 405},
-        {title: "Percentage", value: 78},
+        {id:1,title: "Total Credit Hour", value: 18},
+        {id:2,title: "Total Marks", value: 600},
+        {id:3,title: "Obtain Marks", value: 405},
+        {id:4,title: "Percentage", value: 78},
         ],
     }
   ];
@@ -33,7 +57,7 @@ export default function Page() {
       {/* GRID: 2 per row, total 3 rows */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         {data[0].studentDetails.map((item, i) => (
-          <Card key={i} title={item.title} value={item.value} />
+          <Card key={item.id} title={item.title} value={item.value} />
         ))}
       </div>
 
@@ -45,9 +69,9 @@ export default function Page() {
         result.results.map((cur, ind)=>{
             return (
 
-                <div key={ind} className="flex flex-col gap-2">
+                <div key={cur.id} className="flex flex-col gap-2">
                     <p>Semester {ind+1}</p>
-                      <Table key={ind} tableHead={result.head} tableRowData={cur.tableRowData}/>
+                      <Table key={cur.id} tableHead={result.head} tableRowData={cur.tableRowData}/>
                 </div>
               
             )
@@ -63,7 +87,7 @@ export default function Page() {
       {/* GRID: 2 per row, total 3 rows */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         {data[1].resultDetails.map((item, i) => (
-          <Card key={i} title={item.title} value={item.value} />
+          <Card key={item.id} title={item.title} value={item.value} />
         ))}
       </div>
 
