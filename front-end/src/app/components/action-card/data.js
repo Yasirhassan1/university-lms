@@ -11,41 +11,41 @@ export const actionCardData = [
     {
         title: "LECTURES",
         icon: FaRegFile,    
-        goto: "/dashboard/lectures"
+        goto: "/dashboard/courses/syllabus"
     },
     {
         title: "COURSES",
         icon: PiCylinderLight,
-        goto: "/dashboard/courses"
+        goto: "/dashboard/courses/course-registration"
     },
     {
         title: "ATTENDENCE",
         icon: FaRegCircleCheck,
-        goto: "/dashboard/attendence"
+        goto: "/dashboard/courses/attendence"
     },
     {
         title: "ASSIGNMENT",
         icon: LuFileText,
-        goto: "/dashboard/assignment"
+        goto: "/dashboard/courses/submit-assignment"
     },
     {
         title: "RESULT",
         icon: IoMdStarOutline,
-        goto: "/dashboard/result"
+        goto: "/dashboard/grade-book/my-result"
     },
     {
         title: "E-BOOK",
         icon: IoBookOutline,
-        goto: "/dashboard/e-book"
+        goto: "/dashboard/library/e-book"
     },
     {
         title: "TIME TABLE",
         icon: CiViewTimeline,
-        goto: "/dashboard/time-table"
+        goto: "/dashboard/courses/time-table"
     },
     {
         title: "ACCOUNT",
         icon: TiCreditCard,
-        goto: "/dashboard/account"
+        goto: "/dashboard/account-book/my-fee"
     },
 ];

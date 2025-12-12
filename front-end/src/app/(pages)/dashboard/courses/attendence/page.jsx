@@ -1,6 +1,6 @@
 import Table from "@/app/components/table/Table";
-import {table} from "@/app/(pages)/dashboard/attendence/table-data"
-export default function Page(){
+import {table} from "@/app/(pages)/dashboard/courses/attendence/table-data"
+export default function Attendance(){
     return(
       <div className="flex flex-col gap-4">
         <h3>Attendance of Semester “Fall 2025”</h3>

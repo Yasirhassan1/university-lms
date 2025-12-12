@@ -1,5 +1,5 @@
 import Card from "@/app/components/property-card/Card";
-import {result} from "@/app/(pages)/dashboard/result/table-data"
+import {result} from "@/app/(pages)/dashboard/grade-book/my-result/table-data"
 import Table from "@/app/components/table/Table";
 export default function Page() {
   const data = [

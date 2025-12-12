@@ -1,6 +1,6 @@
 import Table from "@/app/components/table/Table";
-import {table} from "@/app/(pages)/dashboard/lectures/table-data"
-export default function Page(){
+import {table} from "@/app/(pages)/dashboard/courses/syllabus/table-data"
+export default function Syllabus(){
     return(
         <section>
             <h2>Syllabus</h2>

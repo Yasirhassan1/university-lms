@@ -6,12 +6,12 @@ export const linksData = [
     },
     {
         name: "QEC",
-        href: "/qec",
+        href: "/dashboard/qec",
         expandable: false,
     },
     {
         name: "CODE CONTRIBUTORS",
-        href: "/code-contributors",
+        href: "/dashboard/code-contributors",
         expandable: false,
     },
     {
@@ -19,13 +19,13 @@ export const linksData = [
         href: "/courses",
         expandable: true,
         subLinks: [
-            { name: "Course Registration", href: "/courses/current" },
-            { name: "Attendence", href: "/courses/history" },
-            { name: "Syllabus", href: "/courses/registration" },
-            { name: "Submit Assignment", href: "/courses/registration" },
-            { name: "Time Table", href: "/courses/registration" },
-            { name: "Quiz", href: "/courses/registration" },
-            { name: "Scheme of Studies", href: "/courses/registration" },
+            { name: "Course Registration", href: "/dashboard/courses/course-registration" },
+            { name: "Attendence", href: "/dashboard/courses/attendence" },
+            { name: "Syllabus", href: "/dashboard/courses/syllabus" },
+            { name: "Submit Assignment", href: "/dashboard/courses/submit-assignment" },
+            { name: "Time Table", href: "/dashboard/courses/time-table" },
+            { name: "Quiz", href: "/dashboard/courses/quiz" },
+            { name: "Scheme of Studies", href: "/dashboard/courses/scheme-of-studies" },
         ]
     },
     {
@@ -33,10 +33,10 @@ export const linksData = [
         href: "/grade-book",
         expandable: true,
         subLinks: [
-            { name: "My Result", href: "/grade-book/mid-term" },
-            { name: "Quiz", href: "/grade-book/final-term" },
-            { name: "DateSheet", href: "/grade-book/transcript" },
-            { name: "Admt Card", href: "/grade-book/transcript" },
+            { name: "My Result", href: "/dashboard/grade-book/my-result" },
+            { name: "Quiz", href: "/dashboard/grade-book/quiz" },
+            { name: "DateSheet", href: "/dashboard/grade-book/date-sheet" },
+            { name: "Admit Card", href: "/dashboard/grade-book/admit-card" },
         ]
     },
     {
@@ -44,36 +44,41 @@ export const linksData = [
         href: "/account-book",
         expandable: true,
         subLinks: [
-            { name: "My Fee", href: "/account-book/challan" },
-            { name: "Generate General Fee", href: "/account-book/history" },
-            { name: "Generate Short Attendence Fee", href: "/account-book/history" },
+            { name: "My Fee", href: "/dashboard/account-book/my-fee" },
+            { name: "Generate General Fee", href: "/dashboard/account-book/generate-general-fee" },
+            { name: "Generate Short Attendence Fee", href: "/dashboard/account-book/generate-short-attendence-fee" },
         ]
     },
     {
         name: "TRANSPORT",
-        href: "/transport",
+        href: "/dashboard/transport",
         expandable: false,
     },
     {
         name: "LIBRARY",
-        href: "/library",
+        href: "/dashboard/library/e-book",
         expandable: false,
     },
     {
         name: "COMMON",
         href: "/common",
-        expandable: false,
+        expandable: true,
+        subLinks: [
+            { name: "Edit Profile", href: "/dashboard/common/edit-profile" },
+            { name: "Change Password", href: "/dashboard/common/change-password" },
+            { name: "Rules and Regulations", href: "/dashboard/common/rules-and-regulations" },
+            { name: "Calender", href: "/dashboard/common/calender" },
+            { name: "Help", href: "/dashboard/common/help" },
+            { name: "How to reset Password", href: "/dashboard/common/how-to-reset-password" },
+            { name: "Complaint", href: "/dashboard/common/complaint" },
+        ]
     },
     {
         name: "DOWNLOADS",
-        href: "/downloads",
+        href: "/dashboard/downloads",
         expandable: false,
     },
-    {
-        name: "DIGITAL LIBRARY",
-        href: "/digital-library",
-        expandable: false,
-    },
+   
 
 
 ]

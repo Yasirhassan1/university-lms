@@ -26,7 +26,7 @@ export default function Page(){
                 <Link href={"/"}>COMMON</Link>
               </div>
             </header>
-       <form action="" className="p-6 mt-5  bg-white w-full h-fit max-w-md border shadow-lg border-gray-200 rounded-xl  flex flex-col gap-4">
+       <form action="" className="p-6 mt-5  bg-white w-full h-fit md:max-w-md border shadow-lg border-gray-200 rounded-xl  flex flex-col gap-4">
             <div className="flex flex-col  items-center">
             <h3>Welcome Back</h3>
             <span className="text-gray-500">Sign in to your LMS</span>
@@ -50,7 +50,7 @@ export default function Page(){
               <input type="checkbox" />
                 <span>Remember me</span>
             </div>
-            <Link href={"/dashboard"} className="bg-(--primary-color) mt-3  text-white py-2 rounded-md text-center hover:bg-[#015228] duration-200 transition-all cursor-pointer font-semibold">Sign In</Link>
+            <Link href={"/dashboard"} className="bg-(--primary-color) mt-3  text-white py-3 rounded-md text-center hover:bg-[#015228] duration-200 transition-all cursor-pointer font-semibold">Sign In</Link>
             <Link className="mt-6 hover:underline w-fit text-gray-500" href={"/"}>Forget Password?</Link>
         </form>
 
