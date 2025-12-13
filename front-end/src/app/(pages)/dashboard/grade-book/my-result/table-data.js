@@ -1,3 +1,4 @@
+import {v4 as uuidv4} from 'uuid';
 export const result = {
   
   head: [
@@ -16,7 +17,7 @@ export const result = {
   results:[
 
     {
-      id:1,
+      id:uuidv4(),
 
   tableRowData: [
     [
@@ -95,7 +96,7 @@ export const result = {
 
  {
 
-  id:2,
+  id:uuidv4(),
  tableRowData: [
     [
       "1",

@@ -1,37 +1,38 @@
 import Card from "@/app/components/property-card/Card";
 import {result} from "@/app/(pages)/dashboard/grade-book/my-result/table-data"
 import Table from "@/app/components/table/Table";
+import {v4 as uuidv4} from 'uuid';
 export default function Page() {
   const data = [
     {
        studentDetails: [
     {
-      id:1,
+      id:uuidv4(),
       title: "Name", 
       value: "Yasir Hassan" 
       },
     {
-      id:2,
+      id:uuidv4(),
        title: "Father Name", 
        value: "Ghulam Hassan" 
       },
     {
-      id:3,
+      id:uuidv4(),
        title: "Registration No", 
        value: "F23BSCS044" 
       },
     {
-      id:4,
+      id:uuidv4(),
        title: "Department", 
        value: "Computer Science" 
       },
     {
-      id:5,
+      id:uuidv4(),
        title: "Degree", 
        value: "BSCS" 
       },
     {
-      id:6,
+      id:uuidv4(),
        title: "Session", 
        value: "2023-2027" 
       },
@@ -39,10 +40,12 @@ export default function Page() {
     },
     {
         resultDetails: [
-        {id:1,title: "Total Credit Hour", value: 18},
-        {id:2,title: "Total Marks", value: 600},
-        {id:3,title: "Obtain Marks", value: 405},
-        {id:4,title: "Percentage", value: 78},
+
+        {
+          id:uuidv4(),title: "Total Credit Hour", value: 18},
+        {id:uuidv4(),title: "Total Marks", value: 600},
+        {id:uuidv4(),title: "Obtain Marks", value: 405},
+        {id:uuidv4(),title: "Percentage", value: 78},
         ],
     }
   ];
