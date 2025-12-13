@@ -2,25 +2,29 @@ import ActionCardGrid from "@/app/components/action-card/ActionCardGrid";
 import Link from "next/link";
 import QuickInfo from "@/app/components/quick-info/QuickInfo";
 import NoticeBoard from "@/app/components/notice-board/NoticeBoard";
+import { v4 as uuidv4 } from 'uuid';
 export default function Dashboard(){
 
     const data = [
         {
+            id: uuidv4(),
             title: "AI Ethics Webinar",
             date: "2025-12-07",
             location: "Conference Hall",
         },
         {
+            id: uuidv4(),
             title: "AI Ethics Webinar",
             date: "2025-12-07",
             location: "Conference Hall",
         },
         {
+            id: uuidv4(),
             title: "AI Ethics Webinar",
             date: "2025-12-07",
             location: "Conference Hall",
         },
-        {
+        {   id: uuidv4(),
             title: "AI Ethics Webinar",
             date: "2025-12-07",
             location: "Conference Hall",

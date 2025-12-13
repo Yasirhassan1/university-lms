@@ -26,7 +26,7 @@ export default function Sidebar({ isOpen, onClose }) {
       )}
 
       <aside className={`
-                fixed lg:static top-0 left-0 z-50
+                fixed lg:sticky lg:h-lvh lg:overflow-hidden top-0 left-0 z-50
                 w-[320px] bg-white h-full  border-r border-r-gray-200
                 flex flex-col gap-2 p-5
                 transition-transform duration-300 ease-in-out
@@ -61,7 +61,7 @@ export default function Sidebar({ isOpen, onClose }) {
             if (cur.expandable) {
               const isExpanded = expandedMenus.includes(cur.name);
               return (
-                <div key={ind} className="flex flex-col">
+                <div key={cur.id} className="flex flex-col">
                   <button
                     className="flex justify-between items-center w-full group hover:text-green-700 transition-colors"
                     onClick={() => toggleMenu(cur.name)}
@@ -76,9 +76,9 @@ export default function Sidebar({ isOpen, onClose }) {
                   {/* Sub-links */}
                   {isExpanded && (
                     <div className="flex flex-col ml-2 mt-2 border-l-2 border-l-gray-200 pl-4 gap-2 animate-in slide-in-from-top-2 fade-in duration-200">
-                      {cur.subLinks?.map((sub, subInd) => (
+                      {cur.subLinks?.map((sub) => (
                         <Link
-                          key={subInd}
+                          key={sub.id}
                           href={sub.href}
                           onClick={onClose}
                           className="text-sm text-gray-400 hover:text-green-600 hover:underline py-1"

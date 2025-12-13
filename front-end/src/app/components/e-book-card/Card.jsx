@@ -5,8 +5,8 @@ export default function Card({title, author, tags}){
             <span>{author}</span>
             <div className="cont flex flex-wrap gap-3">
                 {
-                    tags.map((cur, ind)=>{
-                        return <span key={ind} className={`px-4 text-sm py-2 rounded-full ${cur.tagColor}`}>{cur.title}</span>
+                    tags.map((cur)=>{
+                        return <span key={cur.id} className={`px-4 text-sm py-2 rounded-full ${cur.tagColor}`}>{cur.title}</span>
                     })
                 }
             

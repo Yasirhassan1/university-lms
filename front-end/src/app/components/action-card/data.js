@@ -6,52 +6,52 @@ import { IoMdStarOutline } from "react-icons/io";
 import { IoBookOutline } from "react-icons/io5";
 import { CiViewTimeline } from "react-icons/ci";
 import { TiCreditCard } from "react-icons/ti";
-
+import { v4 as uuidv4 } from 'uuid';
 export const actionCardData = [
     {
-        id:1,
+        id: uuidv4(),
         title: "LECTURES",
         icon: FaRegFile,    
         goto: "/dashboard/courses/syllabus"
     },
     {
-        id:2,
+        id: uuidv4(),
         title: "COURSES",
         icon: PiCylinderLight,
         goto: "/dashboard/courses/course-registration"
     },
     {
-        id:3,
+        id: uuidv4(),
         title: "ATTENDENCE",
         icon: FaRegCircleCheck,
         goto: "/dashboard/courses/attendence"
     },
     {
-        id:4,
+        id: uuidv4(),
         title: "ASSIGNMENT",
         icon: LuFileText,
         goto: "/dashboard/courses/submit-assignment"
     },
     {
-        id:5,
+        id: uuidv4(),
         title: "RESULT",
         icon: IoMdStarOutline,
         goto: "/dashboard/grade-book/my-result"
     },
     {
-        id:6,
+        id: uuidv4(),
         title: "E-BOOK",
         icon: IoBookOutline,
         goto: "/dashboard/library/e-book"
     },
     {
-        id:7,
+        id: uuidv4(),
         title: "TIME TABLE",
         icon: CiViewTimeline,
         goto: "/dashboard/courses/time-table"
     },
     {
-        id:8,
+        id: uuidv4(),
         title: "ACCOUNT",
         icon: TiCreditCard,
         goto: "/dashboard/account-book/my-fee"
